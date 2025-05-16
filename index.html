@@ -1,0 +1,54 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuis Vulkanisme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="page1" class="page active">
+    <h1>Quiz Vulkanisme</h1>
+    <button class="button" onclick="startQuiz()">Start</button>
+  </div>
+
+  <div id="quizContainer">
+    <!-- Pages 2-4: Quiz Questions -->
+    <div class="page" id="page2">
+      <h2>1. Apa yang dimaksud dengan vulkanisme?</h2>
+      <ul>
+        <li><button onclick="answerQuestion(0, 0)">Pergerakan lempeng tektonik</button></li>
+        <li><button onclick="answerQuestion(0, 1)">Proses naiknya magma ke permukaan bumi</button></li>
+        <li><button onclick="answerQuestion(0, 2)">Pelapukan batuan oleh angin</button></li>
+      </ul>
+    </div>
+
+    <div class="page" id="page3">
+      <h2>2. Magma yang telah keluar ke permukaan disebut?</h2>
+      <ul>
+        <li><button onclick="answerQuestion(1, 0)">Lahar</button></li>
+        <li><button onclick="answerQuestion(1, 1)">Lava</button></li>
+        <li><button onclick="answerQuestion(1, 2)">Debu Vulkanik</button></li>
+      </ul>
+    </div>
+
+    <div class="page" id="page4">
+      <h2>3. Gunung api berbentuk perisai dengan erupsi efusif disebut?</h2>
+      <ul>
+        <li><button onclick="answerQuestion(2, 0)">Tipe Perret</button></li>
+        <li><button onclick="answerQuestion(2, 1)">Tipe Saint-Vincent</button></li>
+        <li><button onclick="answerQuestion(2, 2)">Tipe Hawaii</button></li>
+      </ul>
+    </div>
+
+    <!-- Page 5: Result -->
+    <div class="page" id="page5">
+      <h2>Skor Kamu</h2>
+      <p id="scoreDisplay"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
